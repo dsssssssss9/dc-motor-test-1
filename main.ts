@@ -1,9 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-    pins.analogWritePin(AnalogPin.P1, 1023)
+    pins.digitalWritePin(DigitalPin.P0, 1)
 })
 input.onButtonPressed(Button.B, function () {
-    pins.analogWritePin(AnalogPin.P1, 1023)
+    pins.digitalWritePin(DigitalPin.P0, 0)
 })
+basic.showIcon(IconNames.Heart)
 basic.forever(function () {
 	
 })
